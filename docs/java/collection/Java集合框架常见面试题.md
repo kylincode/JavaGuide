@@ -277,6 +277,7 @@ ConcurrentHashMap 和 Hashtable 的区别主要体现在实现线程安全的方
 
 Segment 实现了 ReentrantLock,所以 Segment 是一种可重入锁，扮演锁的角色。HashEntry 用于存储键值对数据。
 
+可重入锁：<https://segmentfault.com/a/1190000014769953>
 ```java
 static class Segment<K,V> extends ReentrantLock implements Serializable {
 }
