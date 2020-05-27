@@ -83,6 +83,8 @@ System.out.println(a.equals(b));//true
 
 当使用自动装箱方式创建一个Integer对象时，当数值在-128 ~127时，会将创建的 Integer 对象缓存起来，当下次再出现该数值时，直接从缓存中取出对应的Integer对象。所以上述代码中，x和y引用的是相同的Integer对象。	
 
+基本数据类型的缓存：<https://www.jianshu.com/p/2e4e5e25b348>
+
 **注意：**如果你的IDE(IDEA/Eclipse)上安装了阿里巴巴的p3c插件，这个插件如果检测到你用 ==的话会报错提示，推荐安装一个这个插件，很不错。
 
 ## 1.3. BigDecimal
@@ -136,7 +138,7 @@ System.out.println(n);// 1.255
 
 ### 1.3.5. 总结
 
-BigDecimal 主要用来操作（大）浮点数，BigInteger 主要用来操作大整数（超过 long 类型）。
+BigDecimal 主要用来操作（大）浮点数，BigInteger 主要用来操作大z（超过 long 类型）。
 
 BigDecimal 的实现利用到了 BigInteger, 所不同的是 BigDecimal 加入了小数位的概念
 
